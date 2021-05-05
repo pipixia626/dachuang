@@ -15,8 +15,8 @@ import java.lang.ref.WeakReference
 /**
  * 应用程序中所有Activity的基类
  */
-@SuppressLint("Registered")
-open class BaseActivity:AppCompatActivity() {
+abstract class BaseActivity:AppCompatActivity() {
+
     /**
      * 判断当前Activity是否在前台。
      */
@@ -30,6 +30,16 @@ open class BaseActivity:AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
         super.onCreate(savedInstanceState, persistentState)
+        layoutId()
+        initView()
+        initDate()
     }
+
+    protected abstract fun layoutId(): Int
+
+
+    abstract fun initView()
+
+    abstract fun initDate()
 
 }

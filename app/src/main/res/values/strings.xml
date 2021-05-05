@@ -50,4 +50,15 @@
     <string name="num_of_people">您一共有几个人出行？</string>
     <string name="people_of_relation">和您出去玩的人是您的谁呀</string>
     <string name="way_of_go_out">您打算以什么交通方式出行咧</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- 导航栏 -->
+    <string name="fl_layout"></string>
+    <string name="rg"></string>
+    <string name="rb_home">首页</string>
+    <string name="rb_discover">发现</string>
+    <string name="rb_go_out">出行</string>
+    <string name="rb_message">消息</string>
+    <string name="rb_person">个人</string>
 </resources>
