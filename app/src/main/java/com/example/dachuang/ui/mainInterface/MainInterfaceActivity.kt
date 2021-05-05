@@ -39,7 +39,7 @@ class MainInterfaceActivity : AppCompatActivity(),  RadioGroup.OnCheckedChangeLi
         radioGroup= findViewById(R.id.rg)
         radioGroup.setOnCheckedChangeListener(this)
         //更改底部图标大小
-//        initChangeIcon()
+        initChangeIcon()
         //初始化Fragment
         initFragment()
         //设置默认Fragment
