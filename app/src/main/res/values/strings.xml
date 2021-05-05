@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">dachuang</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <!-- 我的 -->
+    <string name="guide_login_tips">点击登录即可评论及发布内容</string>
+    <string name="favorites">收藏</string>
+    <string name="cache">缓存</string>
+    <string name="my_follow">我的关注</string>
+    <string name="watch_record">观看记录</string>
+    <string name="notification_toggle">通知开关</string>
+    <string name="my_badge">我的徽章</string>
+    <string name="feedback">意见反馈</string>
+    <string name="want_contribute">我要投稿</string>
+    <string name="version_show">Version %1$s</string>
+
+    <!-- 分享 -->
+    <string name="share_to">分享到</string>
+    <string name="wechat">微信</string>
+    <string name="wechat_memory">朋友圈</string>
+    <string name="qq_friends">QQ</string>
+    <string name="qq_zone">QQ空间</string>
+    <string name="weibo">微博</string>
+    <string name="more">更多</string>
+    <string name="share_unknown_error">分享出现未知异常</string>
+
+    <!-- 鼓励弹框提示 -->
+    <string name="give_good_review">- 给个好评呗 -</string>
+    <string name="encourage">鼓励一下</string>
+    <string name="not_encourage">我就不给</string>
+    <string name="encourage_message">如果你喜欢 %1$s 的设计，感觉本项目的源代码对你的学习有所帮助，可以给个 \"Star\" 支持一下，谢谢！^_^</string>
+
+    <!-- 爱好提示 -->
+    <string name="hobby_weather">您觉得啥样的天气\能让您感觉轻松愉悦咧^_^</string>
+    <string name="hobby_music">最近喜欢听哪种类型的歌曲呀0.0</string>
+    <string name="hobby_movie">这下面的电影有没有兴趣嘛ヽ(✿ﾟ▽ﾟ)ノ</string>
+    <string name="hobby_seasons">三餐四季中的四季哪个季节最巴适╰(*°▽°*)╯</string>
+    <string name="hobby_free_time_like">平常有没有喜欢摆弄点啥呀</string>
+
+
+    <!-- 出行提问-->
+    <string name="num_of_people">您一共有几个人出行？</string>
+    <string name="people_of_relation">和您出去玩的人是您的谁呀</string>
+    <string name="way_of_go_out">您打算以什么交通方式出行咧</string>
+</resources>
