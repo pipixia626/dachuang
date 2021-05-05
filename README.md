@@ -30,21 +30,22 @@
 
 #### 冷启动询问爱好界面
 
-这里可能要写一下<br>
-详细需求：<br>
-背景：通过一些页面的爱好询问，来记录用户的爱好属性。<br>
-参考图片
-[喜好的环境](https://github.com/pipixia626/dachuang/blob/pipixia/othersource/picture/dp_enviroment.png)
-[喜欢的小说](https://github.com/pipixia626/dachuang/blob/pipixia/othersource/picture/dp_story.png)
-[喜欢的电影](https://github.com/pipixia626/dachuang/blob/pipixia/othersource/picture/dp_movie.png)
-[平常空闲的时侯喜欢干的事](https://github.com/pipixia626/dachuang/blob/pipixia/othersource/picture/dp_like.png)
+这里可能要写一下
+详细需求：
+背景：通过一些页面的爱好询问，来记录用户的爱好属性。
+
+参考图片<br>
+
+[喜好的环境] (https://github.com/pipixia626/dachuang/blob/pipixia/othersource/picture/dp_enviroment.png)<br>
+[喜欢的小说] (https://github.com/pipixia626/dachuang/blob/pipixia/othersource/picture/dp_story.png)<br>
+[喜欢的电影] (https://github.com/pipixia626/dachuang/blob/pipixia/othersource/picture/dp_movie.png)<br>
+[平常空闲的时侯喜欢干的事] (https://github.com/pipixia626/dachuang/blob/pipixia/othersource/picture/dp_like.png)<br>
 
 
 
 项目里面涛涛写了（利用fragment控件实现在一个activity里面的fragout布局里面针对多个类似的不同页面的统一部署）
 
 但没咋子看懂。。
-参考图片：
 
 #### 主界面  
 
@@ -54,7 +55,9 @@
 
  
 #### 出行界面
+这里也要写一下逻辑啥的
 类似于冷启动询问爱好界面
 这里用于询问用户出行的人数，用户伙伴关系，用户的出行交通方式等。。
 
+## 界面稍微弄得可以糊弄过去的那种hhh就行啦
 
