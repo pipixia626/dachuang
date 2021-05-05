@@ -92,6 +92,7 @@ class CategoriesFragment : Fragment() {
             } else {// 进入下一界面
                val intent =Intent(activity,MainInterfaceActivity::class.java)
                 startActivity(intent)
+
             }
         }
     }
