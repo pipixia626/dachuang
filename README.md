@@ -10,7 +10,8 @@
 ## 项目目录：
 <strong>othersource文件：为app的展示视频和某些图片，与项目工程文件无关</strong>
 ## 视频参考：
-（https://github.com/pipixia626/dachuang/blob/pipixia/othersource/%E5%8A%9F%E8%83%BD%E5%B1%95%E7%A4%BA.mp4）
+(https://github.com/pipixia626/dachuang/blob/pipixia/othersource/%E5%8A%9F%E8%83%BD%E5%B1%95%E7%A4%BA.mp4)
+
 ## 需求文档
 
 ### 界面需求
