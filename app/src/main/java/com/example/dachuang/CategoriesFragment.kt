@@ -1,5 +1,6 @@
 package com.example.dachuang
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import androidx.transition.TransitionInflater
+import com.example.dachuang.ui.mainInterface.MainInterface
 import com.google.android.flexbox.FlexDirection
 import com.google.android.flexbox.FlexWrap
 import com.google.android.flexbox.FlexboxLayoutManager
@@ -93,7 +95,8 @@ class CategoriesFragment : Fragment() {
                 fragmentTransaction.replace(R.id.fragment, fragment)
                 fragmentTransaction.commit()
             } else {// 进入下一界面
-
+               val intent =Intent(activity,MainInterface::class.java)
+                startActivity(intent)
             }
         }
     }
