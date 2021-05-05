@@ -34,6 +34,7 @@
 详细需求：
 背景：通过一些页面的爱好询问，来记录用户的爱好属性。
 
+参考图片写的稍微有点丑陋0.0想要美观一下hhh
 参考图片<br>
 
 [喜好的环境] (https://github.com/pipixia626/dachuang/blob/pipixia/othersource/picture/dp_enviroment.png)<br>
