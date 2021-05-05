@@ -9,7 +9,8 @@
         android:id="@+id/fl_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/rg"></FrameLayout>
+        android:layout_above="@id/rg"
+        android:layout_marginBottom="2dp" />
 
     <RadioGroup
         android:id="@+id/rg"

@@ -9,13 +9,8 @@ import android.widget.Button
 import android.widget.CheckedTextView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.RecyclerView
 import androidx.transition.TransitionInflater
-import com.example.dachuang.ui.mainInterface.MainInterface
-import com.google.android.flexbox.FlexDirection
-import com.google.android.flexbox.FlexWrap
-import com.google.android.flexbox.FlexboxLayoutManager
-import org.w3c.dom.Text
+import com.example.dachuang.ui.mainInterface.MainInterfaceActivity
 
 class CategoriesFragment : Fragment() {
 
@@ -95,7 +90,7 @@ class CategoriesFragment : Fragment() {
                 fragmentTransaction.replace(R.id.fragment, fragment)
                 fragmentTransaction.commit()
             } else {// 进入下一界面
-               val intent =Intent(activity,MainInterface::class.java)
+               val intent =Intent(activity,MainInterfaceActivity::class.java)
                 startActivity(intent)
             }
         }

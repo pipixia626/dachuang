@@ -1,7 +1,10 @@
 package com.example.dachuang.ui.mainInterface
 
+import android.os.Bundle
+import android.widget.FrameLayout
 import android.widget.RadioButton
 import android.widget.RadioGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.example.dachuang.R
@@ -12,7 +15,8 @@ import com.example.dachuang.ui.mainInterface.home.HomeFragment
 import com.example.dachuang.ui.mainInterface.message.MessageFragment
 import com.example.dachuang.ui.mainInterface.person.PersonFragment
 
-class MainInterface : BaseActivity(), RadioGroup.OnCheckedChangeListener {
+class MainInterfaceActivity : AppCompatActivity(),  RadioGroup.OnCheckedChangeListener {
+
     var fragmentList = mutableListOf<Fragment>()
     private lateinit var homeFragment: HomeFragment
     private lateinit var goOutFragment: GoOutFragment
@@ -20,25 +24,29 @@ class MainInterface : BaseActivity(), RadioGroup.OnCheckedChangeListener {
     private lateinit var messageFragment: MessageFragment
     private lateinit var personFragment: PersonFragment
     private lateinit var currentFragment: Fragment
+    private  lateinit var radioGroup: RadioGroup
 
-    override fun layoutId(): Int {
-        return R.layout.activity_main
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main_interface)
+        initView()
+        initDate()
     }
 
-    override fun initView() {
+    private fun initView() {
         //设置RadioGroup的监听
-        findViewById<RadioGroup>(R.id.rg).setOnCheckedChangeListener(this)
+        radioGroup= findViewById(R.id.rg)
+        radioGroup.setOnCheckedChangeListener(this)
         //更改底部图标大小
-        initChangeIcon()
+//        initChangeIcon()
         //初始化Fragment
         initFragment()
         //设置默认Fragment
         initSetNormalFragment()
-        TODO("Not yet implemented")
     }
 
-    override fun initDate() {
-        TODO("Not yet implemented")
+    private fun initDate() {
     }
 
     override fun onCheckedChanged(group: RadioGroup?, checkedId: Int) {
@@ -61,7 +69,6 @@ class MainInterface : BaseActivity(), RadioGroup.OnCheckedChangeListener {
     fun initSetNormalFragment() {
         val fm = supportFragmentManager
         showFragment(fragmentList[0], fm)
-
     }
 
 
@@ -82,10 +89,10 @@ class MainInterface : BaseActivity(), RadioGroup.OnCheckedChangeListener {
     }
 
     private fun initChangeIcon() {
-        initDrawable(findViewById(R.id.rb_home))
-        initDrawable(findViewById(R.id.rb_discover))
-        initDrawable(findViewById(R.id.rb_message))
-        initDrawable(findViewById(R.id.rb_person))
+        initDrawable(radioGroup.findViewById(R.id.rb_home))
+        initDrawable(radioGroup.findViewById(R.id.rb_discover))
+        initDrawable(radioGroup.findViewById(R.id.rb_message))
+        initDrawable(radioGroup.findViewById(R.id.rb_person))
     }
 
     private fun initDrawable(v: RadioButton) {
