@@ -31,7 +31,7 @@ class CategoriesAdapter : RecyclerView.Adapter<CategoriesAdapter.ViewHolder>() {
     }
 
     override fun getItemCount(): Int {
-        return 5;
+        return 5
     }
 
 }
