@@ -1,4 +1,4 @@
-package com.example.dachuang.ui
+package com.example.dachuang.ui.goout
 
 /**
  * 出行界面，
