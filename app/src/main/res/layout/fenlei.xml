@@ -6,8 +6,10 @@
 
     <TextView
         android:id="@+id/categorie"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8sp"
-        android:text="test"></TextView>
+        android:gravity="center"
+        android:text="test"
+        android:textSize="25sp"></TextView>
 </LinearLayout>
