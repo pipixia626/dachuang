@@ -6,112 +6,131 @@
     android:layout_height="match_parent"
     tools:context=".ui.travel.TravelActivity">
 
-    <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+    <TextView
+        android:id="@+id/relationship"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/number_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/number_spinner" />
 
-        <TextView
-            android:id="@+id/number"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <Spinner
-            android:id="@+id/number_spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+    <Spinner
+        android:id="@+id/number_spinner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/number"
+        app:layout_constraintTop_toBottomOf="@+id/number" />
 
-        <TextView
-            android:id="@+id/relationship"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+    <RadioGroup
+        android:id="@+id/travel_method_rg"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/travel_method"
+        app:layout_constraintTop_toBottomOf="@+id/travel_method">
 
-        <RadioGroup
-            android:id="@+id/relationship_rg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/driving"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="RadioButton" />
 
-            <RadioButton
-                android:id="@+id/family"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="RadioButton" />
+        <RadioButton
+            android:id="@+id/public_transport"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="RadioButton" />
 
-            <RadioButton
-                android:id="@+id/classmate"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="RadioButton" />
+        <RadioButton
+            android:id="@+id/cycling"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="RadioButton" />
 
-            <RadioButton
-                android:id="@+id/friend"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="RadioButton" />
+        <RadioButton
+            android:id="@+id/walking"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="RadioButton" />
 
-            <RadioButton
-                android:id="@+id/lover"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="RadioButton" />
-        </RadioGroup>
+    </RadioGroup>
 
-        <TextView
-            android:id="@+id/travel_method"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+    <TextView
+        android:id="@+id/travel_method"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/relationship_rg"
+        app:layout_constraintTop_toBottomOf="@+id/relationship_rg" />
 
-        <RadioGroup
-            android:id="@+id/travel_method_rg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+    <RadioGroup
+        android:id="@+id/relationship_rg"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/relationship"
+        app:layout_constraintTop_toBottomOf="@+id/relationship">
 
-            <RadioButton
-                android:id="@+id/driving"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="RadioButton" />
+        <RadioButton
+            android:id="@+id/family"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="RadioButton" />
 
-            <RadioButton
-                android:id="@+id/public_transport"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="RadioButton" />
+        <RadioButton
+            android:id="@+id/classmate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="RadioButton" />
 
-            <RadioButton
-                android:id="@+id/cycling"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="RadioButton" />
+        <RadioButton
+            android:id="@+id/friend"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="RadioButton" />
 
-            <RadioButton
-                android:id="@+id/walking"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="RadioButton" />
+        <RadioButton
+            android:id="@+id/lover"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="RadioButton" />
+    </RadioGroup>
 
-        </RadioGroup>
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="200dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/travel_method_rg" />
 
-        <Button
-            android:id="@+id/confirm"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
-
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
