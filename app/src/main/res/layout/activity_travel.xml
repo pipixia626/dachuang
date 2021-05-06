@@ -8,21 +8,21 @@
 
     <TextView
         android:id="@+id/relationship"
-        android:layout_width="70dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="TextView"
+        android:text="你们的关系？"
         app:layout_constraintStart_toStartOf="@+id/number_spinner"
         app:layout_constraintTop_toBottomOf="@+id/number_spinner" />
 
     <TextView
         android:id="@+id/number"
-        android:layout_width="70dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:text="TextView"
+        android:text="出行的人数？"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintHorizontal_bias="0.147"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,7 +36,7 @@
 
     <RadioGroup
         android:id="@+id/travel_method_rg"
-        android:layout_width="320dp"
+        android:layout_width="360dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:orientation="horizontal"
@@ -48,43 +48,43 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="公交地铁" />
 
         <RadioButton
             android:id="@+id/public_transport"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="驾车" />
 
         <RadioButton
             android:id="@+id/cycling"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="骑行" />
 
         <RadioButton
             android:id="@+id/walking"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="步行" />
 
     </RadioGroup>
 
     <TextView
         android:id="@+id/travel_method"
-        android:layout_width="70dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="TextView"
+        android:text="出行的方式？"
         app:layout_constraintStart_toStartOf="@+id/relationship_rg"
         app:layout_constraintTop_toBottomOf="@+id/relationship_rg" />
 
     <RadioGroup
         android:id="@+id/relationship_rg"
-        android:layout_width="320dp"
+        android:layout_width="360dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:orientation="horizontal"
@@ -96,28 +96,28 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="家人" />
 
         <RadioButton
             android:id="@+id/classmate"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="同学" />
 
         <RadioButton
             android:id="@+id/friend"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="朋友" />
 
         <RadioButton
             android:id="@+id/lover"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="恋人" />
     </RadioGroup>
 
     <Button
@@ -127,7 +127,7 @@
         android:layout_marginStart="80dp"
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="200dp"
-        android:text="Button"
+        android:text="确认"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
