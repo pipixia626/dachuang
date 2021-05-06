@@ -15,7 +15,7 @@ class TravelActivity : AppCompatActivity() {
     }
 
     private fun initView(){
-
+        initSpinner()
     }
 
     private fun initSpinner(){

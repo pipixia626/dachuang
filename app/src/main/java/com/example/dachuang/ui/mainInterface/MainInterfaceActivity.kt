@@ -1,5 +1,6 @@
 package com.example.dachuang.ui.mainInterface
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.FrameLayout
 import android.widget.RadioButton
@@ -14,6 +15,7 @@ import com.example.dachuang.ui.mainInterface.goOut.GoOutFragment
 import com.example.dachuang.ui.mainInterface.home.HomeFragment
 import com.example.dachuang.ui.mainInterface.message.MessageFragment
 import com.example.dachuang.ui.mainInterface.person.PersonFragment
+import com.example.dachuang.ui.travel.TravelActivity
 
 class MainInterfaceActivity : AppCompatActivity(),  RadioGroup.OnCheckedChangeListener {
 
@@ -56,8 +58,10 @@ class MainInterfaceActivity : AppCompatActivity(),  RadioGroup.OnCheckedChangeLi
                 showFragment(fragmentList[0], fm)
             R.id.rb_discover ->
                 showFragment(fragmentList[1], fm)
-            R.id.rb_go_out ->
-                showFragment(fragmentList[2], fm)
+            R.id.rb_go_out -> {
+                val intent =Intent(this,TravelActivity::class.java)
+                startActivity(intent)
+            }
             R.id.rb_message ->
                 showFragment(fragmentList[3], fm)
             R.id.rb_person ->
@@ -65,8 +69,9 @@ class MainInterfaceActivity : AppCompatActivity(),  RadioGroup.OnCheckedChangeLi
         }
     }
 
+
     //默认加载第一个fragment
-    fun initSetNormalFragment() {
+    private fun initSetNormalFragment() {
         val fm = supportFragmentManager
         showFragment(fragmentList[0], fm)
     }
